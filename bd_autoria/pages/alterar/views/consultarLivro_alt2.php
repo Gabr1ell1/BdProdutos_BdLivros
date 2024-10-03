@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Livro</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 
 </head>
 <body>
-<a href="consultarLivro_alt.php" class="alink"><img src="img/voltar.png" alt="Voltar"></a>
+<a href="consultarLivro_alt.php" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar"></a>
 
 <div class="a">
 <?php 
     $txtcod_livro = $_POST["txtcod_livro"];
-    include_once 'livro.php';
+    include_once '../../../models/livro.php';
     $p = new livro();
     $p->setCod_livro($txtcod_livro);
     $pro_bd=$p->alterar(); //CHAMA O MÉTODO ALTERAR NA CLASSE LIVRO

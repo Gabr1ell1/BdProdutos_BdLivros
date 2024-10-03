@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Autores</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 </head>
 <body>
-<a href="excluir.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="excluir.html"></a>
+<a href="../excluir.html" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar" link="excluir.html"></a>
 
 <br><br><br>
 
@@ -16,7 +16,7 @@
         <h1>Exclusão de autores</h1>
 <p>Clique no ícone de lista para ir a listagem</p>
 
-<a href="listar2.php"><img src="img/lista.png" alt="Listar" link="listar2.php" width="24px" height="24px"></a>
+<a href="../../listar/views/listar2.php"><img src="../../../assets/images/lista.png" alt="Listar" link="listar2.php" width="24px" height="24px"></a>
 
         <p>Informe o código do autor:</p>
         <input type="text" name="txtcodAutor">
@@ -32,7 +32,7 @@
 <div id="b">
 <?php
 extract ($_POST, EXTR_OVERWRITE);
-include_once 'autor.php';
+include_once '../../../models/autor.php';
 $p = new autor();
 
 if(isset($_POST['btnconsult']))

@@ -30,7 +30,7 @@
     </thead>    
 <?php
 // Inclui o arquivo 'produto.php', que contém a definição da classe 'produtos'
-include_once 'livro.php';
+include_once '../../../models/livro.php';
 
 // Cria uma nova instância da classe 'produtos' e armazena na variável $p
 $p = new livro();
@@ -58,7 +58,7 @@ foreach($livro_bd as $pro_mostrar)
 
 <br><br>
 <button class="btn">
-    <a href="listar.html">Voltar</a>
+    <a href="../listar.html">Voltar</a>
 </button>
 
 
