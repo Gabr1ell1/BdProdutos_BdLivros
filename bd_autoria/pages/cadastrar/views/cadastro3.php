@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre Aqui</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Cadastrar Livro</title>
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 </head>
 <body>
-<a href="cadastrar.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="cadastrar.html"></a>
+<a href="../cadastrar.html" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar" link="cadastrar.html"></a>
 
 
 <form action="" method="post">
@@ -28,7 +28,7 @@
     extract($_POST, EXTR_OVERWRITE);
     if(isset($_POST['btnenviar']))
     {
-        include_once 'livro.php';
+        include_once '../../../models/livro.php';
 
         $p = new livro();
 

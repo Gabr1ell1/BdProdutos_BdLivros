@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Autoria</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 
 </head>
 <body>
-<a href="consultarAutoria_alt.php" class="alink"><img src="img/voltar.png" alt="Voltar" ></a>
+<a href="./consultarAutoria_alt.php" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar" ></a>
 
 <div>
     <?php 
          $Cod_Autor = $_POST["txtcodAutor"];
          $Cod_Livro = $_POST["txtcodLivro"];
-         include_once 'autoria.php';
+         include_once '../../../models/autoria.php';
          $p = new autoria();
          $p->setCod_Autor($Cod_Autor);
          $p->setCod_Livro($Cod_Livro);

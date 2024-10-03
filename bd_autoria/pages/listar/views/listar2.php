@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Autor</title>
+    <title>Listar Autor</title>
 
     <style>
         body{font-family: 'Times New Roman', Times, serif; text-align: center; align-items: center; padding-top: 50px;}
@@ -14,43 +14,42 @@
     </style>
 </head>
 <body>
-<h1>Tabela Livro</h1>
-<br><br>
 
+<h1>Tabela Autor</h1>
+<br><br>
 <table>
     <thead>
         <tr>
-            <th>Cod_Livro</th>
-            <th>Título</th>
-            <th>Categoria</th>
-            <th>ISBN</th>
-            <th>Idioma</th>
-            <th>Quantidade de Páginas</th>
+            <th>Cod_Autor</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+            <th>Nascimento</th>
         </tr>
-    </thead>    
+    </thead>   
+    
 <?php
 // Inclui o arquivo 'produto.php', que contém a definição da classe 'produtos'
-include_once 'livro.php';
+include_once '../../../models/autor.php';
 
 // Cria uma nova instância da classe 'produtos' e armazena na variável $p
-$p = new livro();
+$p = new autor();
 
 // Chama o método 'listar()' para obter uma lista de produtos e o resultado é armazenado na variável $pro_bd.
-$livro_bd=$p->listar();
+$autor_bd=$p->listar();
 
 ?>
 
 
 <?php
 //Um loop foreach pra exibir cada elemento do array em produto
-foreach($livro_bd as $pro_mostrar)
-{   echo '<tr>';
+foreach($autor_bd as $pro_mostrar)
+{ echo '<tr>';
     echo '<td>'. ($pro_mostrar[0]) . '</td>';
     echo '<td>'. ($pro_mostrar[1]) . '</td>';
     echo '<td>'. ($pro_mostrar[2]) . '</td>';
     echo '<td>'.($pro_mostrar[3]) . '</td>';
     echo '<td>'.($pro_mostrar[4]) . '</td>'; 
-    echo '<td>'.($pro_mostrar[5]) . '</td>';
     echo "</tr>";
 }
 ?>
@@ -58,7 +57,7 @@ foreach($livro_bd as $pro_mostrar)
 
 <br><br>
 <button class="btn">
-    <a href="listar.html">Voltar</a>
+    <a href="../listar.html">Voltar</a>
 </button>
 
 

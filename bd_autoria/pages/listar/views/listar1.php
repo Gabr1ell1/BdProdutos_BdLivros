@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Autoria</title>
+    <title>Listar Autoria</title>
 
     <style>
         body{font-family: 'Times New Roman', Times, serif; text-align: center; align-items: center; padding-top: 50px;}
@@ -29,7 +29,7 @@
     </thead>    
 <?php
 // Inclui o arquivo 'produto.php', que contém a definição da classe 'produtos'
-include_once 'autoria.php';
+include_once '../../../models/autoria.php';
 
 // Cria uma nova instância da classe 'produtos' e armazena na variável $p
 $p = new autoria();
@@ -55,7 +55,7 @@ foreach($autoria_bd as $pro_mostrar)
 </table>
 <br>
 <button class="btn">
-    <a href="listar.html">Voltar</a>
+    <a href="../listar.html">Voltar</a>
 </button>
 
 

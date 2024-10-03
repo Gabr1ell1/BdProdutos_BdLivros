@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre Aqui!</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Cadastrar Autoria</title>
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 </head>
 <body>
     
 
-<a href="cadastrar.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="cadastrar.html"></a>
+<a href="../cadastrar.html" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar" link="cadastrar.html"></a>
 
 
 <form action="" method="post">
@@ -33,7 +33,7 @@ extract($_POST, EXTR_OVERWRITE);
 if(isset($_POST['btnenviar']))
 {
     //inclui o arquivo 'autoria.php'
-    include_once 'autoria.php';
+    include_once '../../../models/autoria.php';
 
     //instanciação da classe 'autoria'
     $p = new autoria();

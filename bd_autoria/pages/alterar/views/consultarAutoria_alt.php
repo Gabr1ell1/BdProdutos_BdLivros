@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Autoria</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 
 </head>
 <body>
-<a href="alterar.html" class="alink"><img src="img/voltar.png" alt="Voltar" ></a>
+<a href="../alterar.html" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar" ></a>
 <br><br><br>
 
-<form name = "clientes" action="consultarAutoria_alt2.php" method="POST">
+<form name = "clientes" action="./consultarAutoria_alt2.php" method="POST">
 <div id="a" >
     <h3>Alteração de Autorias Cadastradas</h3>
 

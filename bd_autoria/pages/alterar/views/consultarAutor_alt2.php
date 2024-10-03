@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Autor</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="../../../assets/css/estilo.css">
 
 </head>
 <body>
-<a href="consultarAutor_alt.php" class="alink"><img src="img/voltar.png" alt="Voltar"></a>
+<a href="./consultarAutor_alt.php" class="alink"><img src="../../../assets/images/voltar.png" alt="Voltar"></a>
 
 <div class="a">
     <?php 
         $txtcod_autor = $_POST["txtcod_autor"];
-        include_once 'autor.php';
+        include_once '../../../models/autor.php';
         $p = new autor();
         $p->setCod_autor($txtcod_autor);
         $pro_bd = $p->alterar(); //CHAMA O MÉTODO ALTERAR NA CLASSE AUTOR
