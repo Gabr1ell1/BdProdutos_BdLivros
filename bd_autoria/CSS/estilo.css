@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 0; /* Remover margens padrão */
+}
+p{
+    font-size: medium;
+    font-style: italic;
+}
+.alink {
+    position: absolute; /* Posiciona a imagem absolutamente em relação ao contêiner do body */
+    top: 20px; /* Ajuste a distância do topo conforme necessário */
+    left: 20px; /* Ajuste a distância da esquerda conforme necessário */
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Adiciona largura total para melhorar a responsividade */
+    max-width: 500px; /* Define uma largura máxima para o formulário */
+}
+
+#a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+
+input[type="submit"],
+input[type="reset"], input[type="button"]{
+    border: 1px solid gray; /* Define a borda dos botões */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px ; /* Preenchimento interno para os botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
+    cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse sobre o botão */
+    background-color:#1E90FF;
+    color: #f0f0f0;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    border: solid 1px black;
+}
+
+#a img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+input[type=text] {
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-size: 16px; 
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
+}

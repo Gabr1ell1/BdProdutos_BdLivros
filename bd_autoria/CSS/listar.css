@@ -1,0 +1,43 @@
+body{
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center; 
+    align-items: center; 
+    padding-top: 50px;
+}
+a{
+    color: #4682B4;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.card {
+    display: inline-block;
+    margin: 10px; 
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+}
+.container {
+    text-align: center;
+}
+img {
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    height: 100px;
+}
+.btn{
+    color: #e9e9e9;
+    border: 1px solid gray; /* Define a borda dos botões */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px ; /* Preenchimento interno para os botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
+    cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse sobre o botão */
+    background-color:#4682B4;
+}
+
+.btn:hover{
+    border: solid 1px black;
+}
