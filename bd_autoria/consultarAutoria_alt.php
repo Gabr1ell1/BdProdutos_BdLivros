@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<a href="menu.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="menu.html"></a>
+<a href="alterar.html" class="alink"><img src="img/voltar.png" alt="Voltar" ></a>
 <br><br><br>
 
 <form name = "clientes" action="consultarAutoria_alt2.php" method="POST">
