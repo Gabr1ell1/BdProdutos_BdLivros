@@ -1,4 +1,7 @@
-        
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  
+
 .alink {
     position: absolute; 
     top: 20px; 
@@ -17,9 +20,9 @@ input[type="submit"],
 input[type="reset"], input[type="button"] {
     border: 2px solid gray; 
     border-radius: 5px;
-    padding: 10px ; 
+    padding: 10px; 
     font-size: 12px; 
-    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
+    box-sizing: border-box; 
     cursor: pointer; 
     background-color: #BA55D3;
     color: #f0f0f0;

@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: 'Montserrat', sans-serif; 
     display: flex;
-    
+    font-family: 'Arial', sans-serif;
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin: 0; /* Remover margens padrão */
+    margin: 0; 
 }
 p{
     font-size: medium;
@@ -13,14 +14,14 @@ p{
 }
 
 .alink {
-    position: absolute; /* Posiciona a imagem absolutamente em relação ao contêiner do body */
-    top: 20px; /* Ajuste a distância do topo conforme necessário */
-    left: 20px; /* Ajuste a distância da esquerda conforme necessário */
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
 }
 
 .img {
     display: block;
-    max-width: 100px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+    max-width: 100px; 
 }
 
 
@@ -33,8 +34,8 @@ form {
     flex-direction: column;
     gap: 25px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Adiciona largura total para melhorar a responsividade */
-    max-width: 500px; /* Define uma largura máxima para o formulário */
+    width: 100%; 
+    max-width: 500px; 
 }
 
 #a {
@@ -49,12 +50,12 @@ form {
 
 input[type="submit"],
 input[type="reset"], button {
-    border: 2px solid gray; /* Define a borda dos botões */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 15px ; /* Preenchimento interno para os botões */
-    font-size: 16px; /* Tamanho da fonte dos botões */
-    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
-    cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse sobre o botão */
+    border: 2px solid gray; 
+    border-radius: 5px;
+    padding: 15px ;
+    font-size: 16px; 
+    box-sizing: border-box; 
+    cursor: pointer; 
     background-color:#BA55D3;
     color: #f0f0f0;
 }
@@ -67,7 +68,7 @@ input[type="reset"]:hover, button {
 #a img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    margin-bottom: 20px; 
 }
 
 input[type=text] {
@@ -75,8 +76,9 @@ input[type=text] {
     border-radius: 5px; 
     padding: 10px; 
     font-size: 16px; 
-    box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura */
+    box-sizing: border-box; 
 }
+
 .b{
-    font-size: small;
+    color: gray;
 }

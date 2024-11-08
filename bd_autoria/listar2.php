@@ -2,10 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos Cadastrados</title>
-    <link rel="icon" href="img/produtoIcon.jpg" type="jpg">
+    <title>Listagem de Autores</title>
+    <link rel="icon" href="img/bibliotecaIcon.png" type="jpg">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
         h1 {
         text-align: center;
         font-family: 'Arial', sans-serif;
@@ -25,7 +27,7 @@
         th {
             border: 1px solid #ddd;
             padding: 12px;
-            background-color: #BA55D3;
+            background-color: blue;
             color: #fff;
             text-align: left;
             font-weight: bold;
@@ -57,39 +59,44 @@
     </style>
 </head>
 <body>
-<a href="menu.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="menu.html"></a>
 
-<h1>Estoque de Produtos</h1>
-<br><br>
+<a href="listar.html" class="alink"><img src="img/voltar.png" alt="Voltar"></a>
+
+<h1>Tabela Autor</h1>
 <div class="tabela">
 <table>
     <thead>
         <tr>
-            <th>ID</th>
+            <th>Cod_Autor</th>
             <th>Nome</th>
-            <th>Estoque</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+            <th>Nascimento</th>
         </tr>
-    </thead>    
-<?php   
+    </thead>   
+    
+<?php
 // Inclui o arquivo 'produto.php', que contém a definição da classe 'produtos'
-include_once 'produto.php';
+include_once 'autor.php';
 
 // Cria uma nova instância da classe 'produtos' e armazena na variável $p
-$p = new produtos();
+$p = new autor();
 
 // Chama o método 'listar()' para obter uma lista de produtos e o resultado é armazenado na variável $pro_bd.
-$pro_bd=$p->listar();
+$autor_bd=$p->listar();
 
 ?>
 
+
 <?php
 //Um loop foreach pra exibir cada elemento do array em produto
-foreach($pro_bd as $pro_mostrar)
-{
-    echo '<tr>';
+foreach($autor_bd as $pro_mostrar)
+{ echo '<tr>';
     echo '<td>'. ($pro_mostrar[0]) . '</td>';
     echo '<td>'. ($pro_mostrar[1]) . '</td>';
     echo '<td>'. ($pro_mostrar[2]) . '</td>';
+    echo '<td>'.($pro_mostrar[3]) . '</td>';
+    echo '<td>'.($pro_mostrar[4]) . '</td>'; 
     echo "</tr>";
 }
 ?>

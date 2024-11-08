@@ -2,8 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Cadastrar</title>
     <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="img/produtoIcon.jpg" type="jpg">
+
+    <script>
+    function blockletras(event) {
+        //CAMPO ESTOQUE - BLOQUEIA lETRAS
+        let keypress = event.keyCode || event.which;
+        if(keypress>=48 && keypress<=57)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+</script>
 </head>
 <body>
 <a href="menu.html" class="alink"><img src="img/voltar.png" alt="Voltar" link="menu.html"></a>
@@ -13,8 +29,8 @@
 <div id="a" >
     <img src="img/caixa.png" alt="Produto">
     <legend><b>Dados do Produto </b></legend>
-    <p>Nome: <input name="nome" type="text" size="40" placeholder="Produto" ></p>
-    <p>Estoque: <input name="estoque" type="text" size="10" placeholder="0"></p>
+    <p>Nome: <input name="nome" type="text" size="40" placeholder="Produto" required></p>
+    <p>Estoque: <input name="estoque" type="text" size="10" placeholder="0" required onkeypress="return blockletras(event)"></p>
 
     <br>
         <div class="btn">

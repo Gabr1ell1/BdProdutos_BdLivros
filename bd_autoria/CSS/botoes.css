@@ -1,0 +1,39 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 26, 26);
+    margin: 0; /* Remover margens padrão */
+    background-color: white;
+}
+.alink {
+    position: absolute; /* Posiciona a imagem absolutamente em relação ao contêiner do body */
+    top: 20px; /* Ajuste a distância do topo conforme necessário */
+    left: 20px; /* Ajuste a distância da esquerda conforme necessário */
+}
+
+.box{
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+}
+.btn {
+    
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    margin: 50px 50px;
+    padding: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+    transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+  }
+
+.btn :hover{
+box-shadow: 0 8px 16px gray;
+}
