@@ -4,11 +4,6 @@ Esse projeto foi desenvolvido para praticar CRUD com PHP e MySQL, simulando o ge
 
 <p align="center"> <img src="https://img.shields.io/badge/Cadastrar-4CAF50?style=for-the-badge" /> <img src="https://img.shields.io/badge/Listar-2196F3?style=for-the-badge" /> <img src="https://img.shields.io/badge/Pesquisar-9C27B0?style=for-the-badge" /> <img src="https://img.shields.io/badge/Atualizar-FF9800?style=for-the-badge" /> <img src="https://img.shields.io/badge/Excluir-F44336?style=for-the-badge" /> </p>
 
-O sistema é dividido em dois módulos:
-
-  📘 Autoria
-  📦 Produtos
-
 # 🛠 Tecnologias utilizadas
 
 <p align="center"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/phpMyAdmin-6C78AF?style=for-the-badge&logo=php&logoColor=white" /> <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> </p>
