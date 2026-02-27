@@ -2,7 +2,7 @@
 
 Esse projeto foi desenvolvido para praticar CRUD com PHP e MySQL, simulando o gerenciamento de uma biblioteca. Aqui eu trabalhei a integração entre front-end e back-end, criando rotinas completas de:
 
-<p align="center"> <img src="https://img.shields.io/badge/Cadastrar-4CAF50?style=for-the-badge" /> <img src="https://img.shields.io/badge/Listar-2196F3?style=for-the-badge" /> <img src="https://img.shields.io/badge/Pesquisar-9C27B0?style=for-the-badge" /> <img src="https://img.shields.io/badge/Atualizar-FF9800?style=for-the-badge" /> <img src="https://img.shields.io/badge/Excluir-F44336?style=for-the-badge" /> </p><p align="center"> <img src="https://img.shields.io/badge/Cadastrar-4CAF50?style=for-the-badge" /> <img src="https://img.shields.io/badge/Listar-2196F3?style=for-the-badge" /> <img src="https://img.shields.io/badge/Pesquisar-9C27B0?style=for-the-badge" /> <img src="https://img.shields.io/badge/Atualizar-FF9800?style=for-the-badge" /> <img src="https://img.shields.io/badge/Excluir-F44336?style=for-the-badge" /> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Cadastrar-4CAF50?style=for-the-badge" /> <img src="https://img.shields.io/badge/Listar-2196F3?style=for-the-badge" /> <img src="https://img.shields.io/badge/Pesquisar-9C27B0?style=for-the-badge" /> <img src="https://img.shields.io/badge/Atualizar-FF9800?style=for-the-badge" /> <img src="https://img.shields.io/badge/Excluir-F44336?style=for-the-badge" /> </p>
 
 O sistema é dividido em dois módulos:
 
