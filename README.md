@@ -15,6 +15,7 @@ Esse projeto foi desenvolvido para praticar CRUD com PHP e MySQL, simulando o ge
 - Lógica de backend aplicada na prática
 - Esse projeto fez parte do meu processo de evolução como desenvolvedora e foi essencial para fortalecer meus fundamentos em desenvolvimento web.
 
+# 
 De uma olhada no projeto!
 
    <img align="center" width="694" height="642" alt="telaWeb" src="https://github.com/user-attachments/assets/5d2398dd-e6b1-4707-9d49-1c535d0c51de" />
